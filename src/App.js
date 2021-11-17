@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import FinderPages from "./FinderPages";
+import Transaction from "./Transaction";
+import "./App.css";
 
 function App() {
+  const [url, setURL] = useState("https://finder.terra.money");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Finder Test App</h1>
+      Input Finder URL:
+      <input
+        type="text"
+        value={url}
+        onChange={(e) => setURL(e.target.value)}
+        className="inputURL"
+      />
+      <br />
+      <Transaction url={url} />
+      <FinderPages url={url} />
     </div>
   );
 }

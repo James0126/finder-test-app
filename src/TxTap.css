@@ -1,0 +1,15 @@
+table,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+table {
+  text-align: center;
+}
+
+.tapButton {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #333;
+}
