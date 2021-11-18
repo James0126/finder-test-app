@@ -47,6 +47,13 @@ const FinderPages = ({ url }) => {
           url + `/testnet/address/terra1xwk2x2pyrhlshjgnlv3ql5q8r8r8vyrdf6u2mj`
         )}
       </div>
+      <div>
+        MultiSend Account Page
+        <br />
+        {linkFinder(
+          url + `/mainnet/address/terra1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3`
+        )}
+      </div>
     </>
   );
 };
